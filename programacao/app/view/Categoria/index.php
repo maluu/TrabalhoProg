@@ -9,12 +9,18 @@
 </head>
 <body>
 
+<a href="">incluir nova categoria...</a>
+    <h1>Lista categorias</h1>
+
     <table>
         <?php foreach ($categorias as $categoria):?>
 
         <tr>
-            <td><?= $categoria->getNome()?></td>
+            <td><a href="?action=show&id=<?=$categoria-> getId();?>"><?= $categoria->getNome()?></a></td>
             <td><?= $categoria->getDescricao()?></td>
+            <td>
+
+            </td>
         </tr>
         <?php endforeach; ?>
 
