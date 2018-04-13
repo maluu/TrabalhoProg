@@ -32,5 +32,14 @@ switch ($action){
         include '../view/template/cabecalho.php';
         include '../view/Categoria/index.php';
         include '../view/template/rodape.php';
+    break;
+    case'show';
+    $id = $GET_['id'];
+    $crud = new CategoriaCrud();
+    $categoria =$crud->getCategoria($id);
+    include '../view/template/cabecalho.php/';
+    include '../view/Categoria/show.php';
+    include '../view/template/rodape.php';
+    break;
 
 }
