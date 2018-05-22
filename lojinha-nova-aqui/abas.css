@@ -1,0 +1,17 @@
+
+
+#aba ul li{
+    display: inline-block;
+    border: 1px solid orange;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#conteudos{
+    border: 1px solid greenyellow;
+
+}
+
+.selecionado{
+    background-color: peru;
+}
